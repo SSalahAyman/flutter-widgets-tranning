@@ -5,6 +5,7 @@ import 'package:listview/screens/Fourth_example.dart';
 import 'package:listview/screens/fifth_example.dart';
 import 'package:listview/screens/first_example.dart';
 import 'package:listview/screens/second_example.dart';
+import 'package:listview/screens/sixith_example.dart';
 import 'package:listview/screens/three_example.dart';
 
 class Homepage extends StatelessWidget {
@@ -93,14 +94,14 @@ class Homepage extends StatelessWidget {
               Fifth example (listview)
             */
             Examplecategory(
-              nameofexample: "example 4",
-              background: Colors.pink,
+              nameofexample: "example 6",
+              background: Colors.yellow,
               ontap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext) {
-                      return Fifthexample();
+                      return Sixthexample();
                     },
                   ),
                 );
