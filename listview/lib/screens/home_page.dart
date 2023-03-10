@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:listview/components/example_category.dart';
+import 'package:listview/screens/Fourth_example.dart';
+import 'package:listview/screens/fifth_example.dart';
 import 'package:listview/screens/first_example.dart';
 import 'package:listview/screens/second_example.dart';
+import 'package:listview/screens/three_example.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -47,6 +50,57 @@ class Homepage extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (BuildContext) {
                       return Secondexample();
+                    },
+                  ),
+                );
+              },
+            ),
+            /*
+              Third example (listview)
+            */
+            Examplecategory(
+              nameofexample: "example 3",
+              background: Colors.orange,
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext) {
+                      return Thirdexample();
+                    },
+                  ),
+                );
+              },
+            ),
+            /*
+              Fourth example (listview)
+            */
+            Examplecategory(
+              nameofexample: "example 4",
+              background: Colors.purple,
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext) {
+                      return Fourthexample();
+                    },
+                  ),
+                );
+              },
+            ),
+            /*
+              Fifth example (listview)
+            */
+            Examplecategory(
+              nameofexample: "example 4",
+              background: Colors.pink,
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext) {
+                      return Fifthexample();
                     },
                   ),
                 );

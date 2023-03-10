@@ -12,9 +12,9 @@ class _SecondexampleState extends State<Secondexample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         title: const Center(
-          child: Text("First Example"),
+          child: Text("Second Example"),
         ),
       ),
       body: Container(

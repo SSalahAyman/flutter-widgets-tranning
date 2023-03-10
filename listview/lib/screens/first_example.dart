@@ -23,6 +23,7 @@ class _FirstexampleState extends State<Firstexample> {
           reverse: false, // default is false
           scrollDirection: Axis.vertical, // Defauilt is vertical
           physics: ClampingScrollPhysics(), //default scroll
+          // physics: BouncingScrollPhysics(),
           children: [
             Text("salah"),
             Container(
