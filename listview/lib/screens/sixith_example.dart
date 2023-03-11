@@ -24,60 +24,63 @@ class _SixthexampleState extends State<Sixthexample> {
             scrollDirection: Axis.vertical, // Defauilt is vertical
             physics: ClampingScrollPhysics(),
             children: [
-              const Text("salah"),
+              Text("Car"),
               Container(
-                height: 300,
-                color: Colors.yellow.withOpacity(0.5),
-                child: const Center(
-                  child: Text(
-                    "Container one",
-                    style: TextStyle(fontSize: 30),
-                  ),
+                height: 240,
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 200,
+                      color: Colors.orange,
+                      child: const Center(
+                        child: Text(
+                          "car Maecedez",
+                          style: TextStyle(fontSize: 30),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.green,
+                      child: const Center(
+                        child: Text(
+                          "car BMW",
+                          style: TextStyle(fontSize: 30),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              ListView(
-                shrinkWrap: true, /////// default is false
-                // physics: NeverScrollableScrollPhysics(),    >>>> to get the list view child with no scroll
-                children: [
+              SizedBox(
+                height: 30,
+              ),
+              Text("Mobile"),
+              Container(
+                height: 240,
+                child: ListView(children: [
                   Container(
-                    alignment: Alignment.centerLeft,
                     height: 200,
-                    child: const Text(
-                      "List view child",
-                      style: TextStyle(fontSize: 20),
+                    color: Colors.yellow.withOpacity(0.5),
+                    child: const Center(
+                      child: Text(
+                        "Mobile S20 Ultra mobile",
+                        style: TextStyle(fontSize: 30),
+                      ),
                     ),
                   ),
                   Container(
-                    alignment: Alignment.centerLeft,
                     height: 200,
-                    color: Colors.brown,
-                    child: const Text(
-                      "List view child",
-                      style: TextStyle(fontSize: 20),
+                    color: Colors.blue,
+                    child: const Center(
+                      child: Text(
+                        "Mobile S21 Ultra mobile",
+                        style: TextStyle(fontSize: 30),
+                      ),
                     ),
-                  )
-                ],
-              ),
-              Container(
-                height: 300,
-                color: Colors.yellow.withOpacity(0.7),
-                child: const Center(
-                  child: Text(
-                    "Container two",
-                    style: TextStyle(fontSize: 30),
                   ),
-                ),
-              ),
-              Container(
-                height: 300,
-                color: Colors.yellow.withOpacity(0.9),
-                child: const Center(
-                  child: Text(
-                    "Container three",
-                    style: TextStyle(fontSize: 30),
-                  ),
-                ),
-              ),
+                ]),
+              )
             ]),
       ),
     );

@@ -37,7 +37,7 @@ class _FifthexampleState extends State<Fifthexample> {
               ),
               ListView(
                 shrinkWrap: true, /////// default is false
-                physics: NeverScrollableScrollPhysics(),
+                // physics: NeverScrollableScrollPhysics(),    >>>> to get the list view child with no scroll
                 children: [
                   Container(
                     alignment: Alignment.centerLeft,
