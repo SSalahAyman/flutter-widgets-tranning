@@ -31,7 +31,7 @@ class _FirstexampleState extends State<Firstexample> {
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: Colors.red,
                   borderRadius: BorderRadius.circular(10),

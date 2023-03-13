@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:listviewbuilder/screens/first_example.dart';
+import 'package:listviewbuilder/screens/second_example.dart';
+import 'package:listviewbuilder/screens/third_example.dart';
 
 import '../components/example.category.dart';
 
@@ -20,7 +22,7 @@ class Homepage extends StatelessWidget {
         child: ListView(
           children: [
             /*
-              First example (listview)
+              First example (listview.builder)
             */
             Examplecategory(
               nameofexample: "example 1",
@@ -36,6 +38,40 @@ class Homepage extends StatelessWidget {
                 );
               },
             ),
+            /*
+              Second example (listview.builder)
+            */
+            Examplecategory(
+              nameofexample: "example 2",
+              background: Colors.black.withOpacity(0.7),
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext) {
+                      return Secondexample();
+                    },
+                  ),
+                );
+              },
+            ),
+            /*
+              Second example (listview.separated)
+            */
+            Examplecategory(
+              nameofexample: "example 3",
+              background: Colors.blueAccent,
+              ontap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext) {
+                      return Thirdexample();
+                    },
+                  ),
+                );
+              },
+            )
           ],
         ),
       ),
